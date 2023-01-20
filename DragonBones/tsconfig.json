@@ -13,7 +13,7 @@
 		"experimentalDecorators": true,
 		"allowSyntheticDefaultImports": true,
 		"target": "es5",
-		"outFile": "out/dragonBones.js",
+		// "outFile": "out/dragonBones.js",
 		"lib": [
 			"es5",
 			"dom",
@@ -68,6 +68,7 @@
 		"./src/dragonBones/parser/ObjectDataParser.ts",
 		"./src/dragonBones/parser/BinaryDataParser.ts",
 		
-		"./src/dragonBones/factory/BaseFactory.ts"
+		"./src/dragonBones/factory/BaseFactory.ts",
+        // "./src/dragonBones/armature/NewType.ts"
 	]
 }

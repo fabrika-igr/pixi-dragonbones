@@ -1,3 +1,6 @@
+import { Texture } from "pixi.js";
+import { BaseDemo } from "./BaseDemo";
+
 /**
  * How to use
  * 1. Load data.
@@ -20,7 +23,6 @@ class HelloDragonBones extends BaseDemo {
         super();
 
         this._resources.push(
-            // "resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.json",
             "resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin",
             "resource/mecha_1002_101d_show/mecha_1002_101d_show_tex.json",
             "resource/mecha_1002_101d_show/mecha_1002_101d_show_tex.png"
@@ -28,16 +30,14 @@ class HelloDragonBones extends BaseDemo {
     }
 
     protected _onStart(): void {
-        const factory = dragonBones.PixiFactory.factory;
-        // factory.parseDragonBonesData(this._pixiResource["resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.json"].data);
-        factory.parseDragonBonesData(this._pixiResources["resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.dbbin"].data);
-        factory.parseTextureAtlasData(this._pixiResources["resource/mecha_1002_101d_show/mecha_1002_101d_show_tex.json"].data, this._pixiResources["resource/mecha_1002_101d_show/mecha_1002_101d_show_tex.png"].texture);
-
+        /*const factory = PixiFactory.factory;
+        const texture: Texture = this._pixiResources.get("resource/mecha_1002_101d_show/mecha_1002_101d_show_tex.png");
+        factory.parseDragonBonesData(this._pixiResources.get("resource/mecha_1002_101d_show/mecha_1002_101d_show_ske.json"));
+        factory.parseTextureAtlasData(this._pixiResources.get("resource/mecha_1002_101d_show/mecha_1002_101d_show_tex.json"), texture);
         const armatureDisplay = factory.buildArmatureDisplay("mecha_1002_101d", "mecha_1002_101d_show");
         armatureDisplay.animation.play("idle");
-
         armatureDisplay.x = 0.0;
         armatureDisplay.y = 200.0;
-        this.addChild(armatureDisplay);
+        this.app.stage.addChild(armatureDisplay);*/
     }
 }
