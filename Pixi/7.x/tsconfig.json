@@ -25,6 +25,7 @@
 		"out"
 	],
 	"files": [
+		"./global.d.ts",
 		"../../DragonBones/src/dragonBones/core/DragonBones.ts",
 		"../../DragonBones/src/dragonBones/core/BaseObject.ts",
 

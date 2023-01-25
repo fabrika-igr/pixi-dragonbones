@@ -1,13 +1,21 @@
 {
-  "name": "dragonbones-pixi",
+  "name": "dragonbones-pixi7",
   "version": "5.7.0",
-  "main": "",
+  "main": "out/dragonBones.js",
   "scripts": {
     "build": "tsc & uglifyjs ./out/dragonBones.js -o ./out/dragonBones.min.js -m"
   },
+  "types": "out/dragonBones.d.ts",
   "dependencies": {
     "pixi.js": "7.1.0"
   },
+  "keywords": [
+    "pixijs",
+    "dragonbones"
+  ],
+  "files": [
+    "/out"
+  ],
   "devDependencies": {
     "typescript": "4.3.5",
     "uglify-js": "^3.5.2"

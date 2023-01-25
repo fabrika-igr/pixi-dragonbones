@@ -36,7 +36,7 @@ namespace dragonBones {
         private static _dragonBonesInstance: DragonBones = null as any;
         private static _factory: PixiFactory = null as any;
         private static _clockHandler(passedTime: number): void {
-            this._dragonBonesInstance.advanceTime((passedTime / PIXI.settings.TARGET_FPMS) * 0.001);
+            this._dragonBonesInstance.advanceTime((passedTime / (PIXI.settings.TARGET_FPMS || 0.06)) * 0.001);
         }
 
         /*

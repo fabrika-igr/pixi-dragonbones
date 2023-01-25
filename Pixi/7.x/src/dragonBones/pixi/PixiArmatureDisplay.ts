@@ -45,7 +45,7 @@ namespace dragonBones {
          */
         public dbClear(): void {
             if (this._debugDrawer !== null) {
-                this._debugDrawer.destroy({children:true, texture: true, baseTexture: true})
+                this._debugDrawer.destroy({ children: true, texture: true, baseTexture: true })
             }
 
             this._armature = null as any;
@@ -182,13 +182,13 @@ namespace dragonBones {
          * @private
          */
         public dispatchDBEvent(type: EventStringType, eventObject: EventObject): void {
-            this.emit(type, eventObject);
+            this.emit(type as any, eventObject);
         }
         /**
          * @inheritDoc
          */
         public hasDBEventListener(type: EventStringType): boolean {
-            return this.listenerCount(type) > 0;
+            return this.listenerCount(type as any) > 0;
 
 
         }
