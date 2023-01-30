@@ -1,0 +1,73 @@
+{
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"sourceMap": false,
+		"declaration": true,
+		"module": "es6",
+    	"target": "es6",
+		"outDir": "out",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowJs": true,
+		"lib": [
+			"es6",
+			"dom",
+			"es2015.promise"
+		]
+	},
+	"exclude": [
+		"node_modules",
+		"out"
+	],
+	"files": [
+		"./src/core/core/DragonBones.ts",
+		"./src/core/core/BaseObject.ts",
+
+		"./src/core/geom/Matrix.ts",
+		"./src/core/geom/Transform.ts",
+		"./src/core/geom/ColorTransform.ts",
+		"./src/core/geom/Point.ts",
+		"./src/core/geom/Rectangle.ts",
+
+		"./src/core/model/UserData.ts",
+		"./src/core/model/DragonBonesData.ts",
+		"./src/core/model/ArmatureData.ts",
+		"./src/core/model/ConstraintData.ts",
+		"./src/core/model/CanvasData.ts",
+		"./src/core/model/SkinData.ts",
+		"./src/core/model/DisplayData.ts",
+		"./src/core/model/BoundingBoxData.ts",
+		"./src/core/model/AnimationData.ts",
+		"./src/core/model/AnimationConfig.ts",
+		"./src/core/model/TextureAtlasData.ts",
+
+		"./src/core/armature/IArmatureProxy.ts",
+		"./src/core/armature/Armature.ts",
+		"./src/core/armature/TransformObject.ts",
+		"./src/core/armature/Bone.ts",
+		"./src/core/armature/Surface.ts",
+		"./src/core/armature/Slot.ts",
+		"./src/core/armature/Constraint.ts",
+
+		"./src/core/animation/IAnimatable.ts",
+		"./src/core/animation/WorldClock.ts",
+		"./src/core/animation/Animation.ts",
+		"./src/core/animation/AnimationState.ts",
+		"./src/core/animation/BaseTimelineState.ts",
+		"./src/core/animation/TimelineState.ts",
+
+		"./src/core/event/EventObject.ts",
+		"./src/core/event/IEventDispatcher.ts",
+
+		"./src/core/parser/DataParser.ts",
+		"./src/core/parser/ObjectDataParser.ts",
+		"./src/core/parser/BinaryDataParser.ts",
+
+		"./src/core/factory/BaseFactory.ts",
+
+		"./src/pixi/PixiTextureAtlasData.ts",
+		"./src/pixi/PixiArmatureDisplay.ts",
+		"./src/pixi/PixiSlot.ts",
+		"./src/pixi/PixiFactory.ts"
+	]
+}
